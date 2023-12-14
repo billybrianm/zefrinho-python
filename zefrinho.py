@@ -1,4 +1,3 @@
-import os
 import discord
 
 
@@ -19,4 +18,8 @@ intents.message_content = True
 
 client = MyClient(intents=intents, activity=discord.Game(name='Putaria'))
 
-client.run(os.getEnv('token'))
+with open('path_to_your_file.txt', 'r') as file:
+    file_contents = file.read()
+
+
+client.run(file_contents)
