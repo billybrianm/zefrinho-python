@@ -1,3 +1,4 @@
+import os
 import discord
 
 
@@ -18,4 +19,4 @@ intents.message_content = True
 
 client = MyClient(intents=intents, activity=discord.Game(name='Putaria'))
 
-client.run('NzA1MzEyOTQwODMxODAxMzQ1.GRomKg.S4m3j-MsSE8E20FKFNd4up4-AotcQG8JV6-Xq0')
+client.run(os.getEnv('token'))
